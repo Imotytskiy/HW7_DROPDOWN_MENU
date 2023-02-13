@@ -1,0 +1,69 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-area{
+    background: #333333; /* Якщо браузер не підтримує linear*/
+    background-image: linear-gradient(#333333 93%, #009EFF 7%);
+    
+}
+.nav-area:after{ 
+    content:'';
+    clear: both;
+    display: block;
+}
+.nav-area ul{
+    list-style: none;
+    margin: 0;
+}
+
+.nav-area > ul > li {
+    float: left;
+    position: relative;
+}
+
+.nav-area ul li a {
+    text-decoration: none;
+    color: #CBCBCB;
+    padding: 15px 20px;
+    border: 2px;
+    border-color: 009EFF;
+    display: block;
+}
+
+.nav-area ul li:hover a{
+    background: #009EFF;
+   
+}
+
+.nav-area ul ul {
+    position: absolute;
+    padding: 0;
+    min-width: 136px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.nav-area ul li:hover > ul{
+    display: block;
+
+} 
+
+.nav-area ul ul li:hover a{
+    background: #00A9FF;
+
+}
+.nav-area ul ul li {
+    position: relative;
+}
+.nav-area ul ul ul {
+    top: 0;
+    left: 100%;
+} 
+.nav-area ul ul ul li:hover a{
+    background: #009EFF;
+    border-style: solid;     /* намагався зробити ефект border 2px, як в шаблоні, сусудні пункти сумуються виходить 4px. */
+    border-color: #0084EF;
+    border-width: 2px;
+}

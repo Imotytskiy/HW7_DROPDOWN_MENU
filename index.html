@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ДЗ 7. Многорівневе меню</title>
+    <!-- Потрібно зверстати меню на кілька рівнів, як на картинці. Дизайн повторювати не потрібно, він може бути на вашу думку. 
+        Головне - виконати завдання, щоб за наведенням на пункт Products випадав список,а якщо в цьому списку навести курсор на 
+        Product 2, то ще один список. При переведенні курсору з пункту Products на Product 1 ефект від наведення повинен залишатися
+        на пункті Products. -->
+</head>
+<body>
+    <nav class="nav-area">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS +</a>
+                <ul>
+                    <li><a href="#">Product 1&nbsp;&nbsp;&nbsp;&nbsp;+</a></li>
+                    <li><a href="#">Product 2&nbsp;&nbsp;&nbsp;&nbsp;+</a>
+                        <ul>
+                             <li><a href="#">Sub Item</a></li>
+                             <li><a href="#">Sub Item</a></li>
+                        </ul>
+                </ul>
+            </li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
